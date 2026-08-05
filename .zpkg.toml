@@ -1,0 +1,16 @@
+[package]
+org = "zed-pkg-test"
+name = "overtake-submodule-migration"
+version = "0.1.0"
+description = "Independent interop acceptance harness"
+license = "MIT"
+
+[package.repository]
+vcs = "git"
+url = "https://github.com/zed-pkg-test/overtake-submodule-migration"
+
+[install]
+dir = ".vendor/.zed"
+
+[publish]
+exclude = ["artifacts/**", "vendor/**", ".vendor/**", ".env", ".env.*"]
